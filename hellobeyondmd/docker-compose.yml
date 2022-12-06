@@ -1,0 +1,13 @@
+# docker-compose.yml file
+version: '3.3'
+
+services:
+  # run Nginx server
+  site-service:
+    build: ./site  # build the site from dockerfile
+    container_name: hellobeyondmd
+    restart: always
+    ports:
+      - "8080:80"
+    volumes:
+      - ./site:/usr/share/nginx/html #this is the default nginx html root

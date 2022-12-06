@@ -1,0 +1,52 @@
+<!Doctype html>
+
+<!-- Example webpage. Only basic Html and Css. -->
+<!-- regarding style:
+	maincolor = color of background
+	boldtext = formats and centers heading text
+	othertext = font for fine print text
+	imgfitbox,centerfit = centers image on various size webpages
+	logoupperleft = formating for circle logo in upper left
+-->
+<html>
+<head>
+	<link rel="icon" href="https://images.squarespace-cdn.com/content/5fbea594d49dd12447263cb2/1616114618707-0YCTARO6TC1H6OHH4KFT/Beyond+MD+Logo+Design.png?content-type=image%2Fpng">
+	<title> Hello BeyondMD!</title>
+	<style>
+		.maincolor {
+			background-color: rgba(16,36,71, 1);
+		}
+		.boldtext {
+			text-align: center;
+			color: white;
+			font-size: 60px;
+			font-family: Verdana,sans-serif;
+		}
+		.othertext {
+			font-family: Verdana,sans-serif;
+		}
+		.imgfitbox {
+			display: grid;
+			height: 100%;
+		}
+		.center-fit {
+			max-width: 100%;
+			max-height: 100vh;
+			margin: auto;
+		}
+		.logoupperleft {
+			width: 60px;
+			height: 60px;
+			float: left;
+		}
+	</style>
+</head>
+<body class="maincolor">
+	<img class="logoupperleft" src="https://images.squarespace-cdn.com/content/5fbea594d49dd12447263cb2/1616114618707-0YCTARO6TC1H6OHH4KFT/Beyond+MD+Logo+Design.png?content-type=image%2Fpng" alt="BeyondMDCirclelogo">
+	<h1 class="boldtext">Hello BeyondMD!</h1>
+	<div class="imgfitbox">
+		<img class="center-fit" src="https://images.squarespace-cdn.com/content/v1/5fbea594d49dd12447263cb2/1625067275443-ZY3J2XB8NXX8OXDN46Y8/BMD%2BWeb%2BFeature%2BImage-03.jpg" alt="BeyondMDScene">
+	</div>
+	<p class="othertext"> Notice: This website is not an offical page of BeyondMD, nor is it associated with said company in any way. It is a webpage created as an example for a job application. </p>
+</body>
+</html>
